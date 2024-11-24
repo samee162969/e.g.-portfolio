@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiul Islam - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Samiul Islam</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#hire">Hire Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a Data Entry & Web Research Expert</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I’m Samiul Islam, a skilled Data Entry and Web Research expert with years of experience. I provide accurate and timely services tailored to meet your needs.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <ul>
+                <li>Data Entry</li>
+                <li>Web Research</li>
+                <li>Data Cleaning</li>
+                <li>Market Research</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="projects">
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1">
+      <h3>Project Title 1</h3>
+      <p>Short description of the project.</p>
+    </div>
+    <div class="project">
+      <img src="project2.jpg" alt="Project 2">
+      <h3>Project Title 2</h3>
+      <p>Short description of the project.</p>
+    </div>
+  </div>
+</section>
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Here are some of my recent projects.</p>
+            <!-- Add portfolio items here -->
+        </div>
+    </section>
+
+    <!-- Hire Me Section -->
+    <section id="hire">
+        <div class="container">
+            <h2>Hire Me</h2>
+            <p>If you're looking for reliable and high-quality data entry or web research services, I'm here to help. Let's work together!</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <section id="contact">
+  <h2>Contact Me</h2>
+  <form action="mailto:samiul@example.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for any queries or projects.</p>
+            <ul>
+                <li>Email: samiul@example.com</li>
+                <li>Phone: +123 456 7890</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <footer>
+  <p>© 2024 Samiul Islam. All Rights Reserved.</p>
+  <div class="socials">
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    <a href="https://www.github.com" target="_blank">GitHub</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+  </div>
+</footer>
+        <div class="container">
+            <p>© 2024 Samiul Islam. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script>
+  window.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+        navLinks.forEach((link) => link.classList.remove("active"));
+        document.querySelector(`a[href="#${section.id}"]`).classList.add("active");
+      }
+    });
+  });
+</script>
+</body>
+</html>
